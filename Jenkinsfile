@@ -1,28 +1,24 @@
 pipeline{
-          agent{
-                 label{
-                        label "built-in"
- 			customWorkspace "/mnt/test"
+          agent {
+   			label {
+
+ 				label "built-in"
+				customWorkspace "/mnt/test"
+
+					}
 
 
 
-           stages { 
+			}
+		stages {
 
-                  stage ('stage-1'){
+			stage('stage-1'){
 
 				steps{
-
-					echo "this is jenkinsfile"
-
-						}
+				
+					echo "hello velocity"
+				}
 			}
-
-
-
-	   }
-}
-
-}
-
+					}	
 
 }
